@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Playground 🌈</h1>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>Event Magic ✨</h2>
+            <div class="event-box">
+                <button id="color-changer" class="magic-btn">Click Me! 🎨</button>
+                <div id="hover-zone" class="hover-box">Hover Over Me! 👻</div>
+                <div id="key-display">Press Any Key... ⌨️</div>
+                <div id="secret-trigger" class="secret-box">Double-Click for Secret 🤫</div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section class="interactive-section">
+            <h2>Play Zone 🎮</h2>
+            <div class="slideshow-container">
+                <img id="slideshow-image" src="https://picsum.photos/400/300?random=1" alt="Slideshow">
+                <div class="slideshow-controls">
+                    <button id="prev-btn">◀ Previous</button>
+                    <button id="next-btn">Next ▶</button>
+                </div>
+            </div>
+
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">Content for Tab 1 🚀</div>
+                    <div id="tab2" class="tab-pane">Content for Tab 2 🌙</div>
+                    <div id="tab3" class="tab-pane">Content for Tab 3 🌈</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation -->
+        <section class="form-section">
+            <h2>Smart Form 📋</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="error-message"></div>
+                </div>
+                <button type="submit" class="submit-btn">Register 🚀</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
